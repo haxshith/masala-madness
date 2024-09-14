@@ -1,0 +1,142 @@
+
+@media screen and (max-width: 768px) {
+    .detailContainer {
+        margin: 4% 5%;
+        background-color: #fcf9f5;
+        border: 1px solid #f8eee0;
+        border-radius: 5px;
+        padding: 5% 10%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .detailContainer {
+        margin: 4% 8%;
+        background-color: #fcf9f5;
+        border: 1px solid #f8eee0;
+        border-radius: 5px;
+        padding: 5% 10%;
+    }
+}
+@media screen and (min-width: 992px) {
+    .detailContainer {
+        margin: 4% 13%;
+        background-color: #fcf9f5;
+        border: 1px solid #f8eee0;
+        border-radius: 5px;
+        padding: 5% 10%;
+    }
+}
+
+/* 1.header */
+.recipeHeader {
+    display: flex;
+    margin-bottom: 3rem;
+}
+.headerImg {
+    flex: 1;
+    padding-right: 15px;
+}
+.headerInfo {
+    flex: 2;
+    padding-left: 15px;
+}
+.imgBlock {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    box-shadow: 0 0 5px grey;
+}
+.headerImg img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.headerInfo a {
+    text-decoration: none;
+    color: black;
+}
+/* view, like, comment */
+.icon {
+    margin-right: 15px;
+    font-size: 0.7rem;
+}
+/* category, area, tag */
+.headerCat {
+    background-color: #f0ca6e;
+    color: #582300 !important;
+    padding: 3px 10px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 10%);
+    font-size: 0.8rem;
+    margin-right: 0.6rem;
+    font-weight: bold;
+}
+.headerArea {
+    padding: 3px 10px;
+    background-color: black;
+    color: white !important;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 10%);
+    font-size: 0.8rem;
+    margin-right: 0.6rem;
+    font-weight: bold;
+}
+.headerTag {
+    font-size: 0.7rem;
+    color: grey !important;
+    border: 1px solid grey;
+    border-radius: 50px;
+    margin-right: 0.3rem;
+    padding: 0.1rem 0.5rem;
+}
+.headerTag:hover {
+    background-color: grey;
+    color: white !important;
+}
+
+/* 2.youtube */
+.recipeYoutube {
+    margin-bottom: 3rem;
+}
+.youtubeBlock {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin: 0 auto;
+}
+.recipeYoutube iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+/* 3.instruction */
+.recipeInstruct {
+    margin-bottom: 3rem;
+}
+.recipeInstruct ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+
+/* 4.comment */
+.oneComment {
+    margin-bottom: 0.7rem;
+}
+.commentUser {
+    color: #cd8d5f;
+    font-weight: bold;
+    margin-right: 0.8rem;
+}
+.commentTime {
+    color: #666;
+    font-size: 0.9rem;
+}

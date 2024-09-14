@@ -1,0 +1,216 @@
+/* 1.carousel */
+/* showing image */
+.carouselItem {
+    width: 100%;
+    height: 580px;
+}
+.imgMask {
+    background: black;
+}
+.showImg {
+    width: 100%;
+    opacity: 0.5;
+}
+
+/* indicator */
+.indicators {
+    background-color: white;
+    margin-bottom: -50px !important;
+    width: 750px !important;
+    margin: 0 auto;
+}
+.indicatorItem {
+    width: 180px !important;
+    height: 180px !important;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: none !important;
+}
+.thumbnail {
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    transition: all 550ms ease-out;
+
+}
+.indicatorItem:hover {
+    opacity: 1 !important;
+}
+.indicatorItem:hover > .thumbnail {
+    transform: scale(1.1);
+}
+
+/* caption */
+.carouselCaption {
+    top: 25%;
+    bottom: auto;
+}
+.carouselCaption h1 {
+    font-size: 5rem;
+}
+.carouselCaption p a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.carouselCaption p a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+.carouselCaption p a:hover:before {
+    transform: scaleX(1);
+}
+
+
+/* 2.category */
+.category {
+    background-color: #FCF9F5;
+    height: auto;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5vh 10vw;
+    flex-wrap: wrap;
+}
+.cat {
+    width: 150px;
+    position: relative;
+    margin-bottom: 1vh;
+}
+.cat a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-size: 0.75rem;
+    transition: all 0.4s;
+}
+.catBg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+.catName {
+    margin-top: 10px;
+    text-align: center;
+}
+.cat a:hover {
+    color: #61CE70;
+}
+
+/* 3.popular */
+.popItem {
+    width: 250px;
+    margin: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+.popItem img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease-in-out 0s;
+}
+.popText {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    transform: translateY(100%);
+    transition: all 0.5s ease-in-out 0s;
+}
+.popItem:hover .popText {
+    transform: translateY(0);
+}
+.popItem:hover img {
+    transform: scale(1.1);
+}
+
+
+/* 4.random */
+.randomItem {
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+.randomItem a{
+    text-decoration: none;
+    color: white !important;
+    position: relative;
+}
+.randomItem img {
+    width: 100%;
+    opacity: 0.5;
+    transition: all 0.6s;
+}
+.randomItem h1 {
+    position: absolute;
+    bottom: 35%;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+.randomItem:hover img {
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 768px) {
+    .indicators {
+        width: 90vw !important;
+    }
+    .popRow {
+        height: 50vh;
+        padding: 8vh 10vw;
+    }
+    .random {
+        background-image: linear-gradient(to bottom, #fafafa, white);
+        height: 45vh;
+        padding: 5vh 10vw;
+    }
+    .randomItem h1{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .indicators {
+        width: 90vw !important;
+    }
+    .popRow {
+        height: 60vh;
+        padding: 8vh 10vw;
+    }
+    .random {
+        background-image: linear-gradient(to bottom, #fafafa, white);
+        height: 60vh;
+        padding: 5vh 10vw;
+    }
+    .randomItem h1{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .indicators {
+        width: 50vw !important;
+    }
+    .popRow {
+        height: 80vh;
+        padding: 10vh 20vw;
+    }
+    .random {
+        background-image: linear-gradient(to bottom, #fafafa, white);
+        height: 80vh;
+        padding: 10vh 15vw;
+    }
+    .randomItem h1{
+        font-size: 2rem;
+    }
+}
